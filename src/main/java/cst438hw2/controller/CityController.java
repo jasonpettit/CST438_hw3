@@ -19,6 +19,6 @@ public class CityController {
 		// TODO Your code goes here
 		// TODO delete the following line
 		return "";
-	} 
-	
+	}
+
 }
