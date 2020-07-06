@@ -1,5 +1,6 @@
 package cst438hw2.controller;
 
+import cst438hw2.domain.CityInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,10 +16,14 @@ public class CityController {
 	
 	@GetMapping("/cities/{city}")
 	public String getWeather(@PathVariable("city") String cityName, Model model) {
+		CityInfo searchedCity = cityService.getCityInfo(cityName);
 
-		// TODO Your code goes here
-		// TODO delete the following line
-		return "";
+		if (searchedCity == null) {
+			return "city_not_found";
+		}
+		else {
+			model.addAttribute("cityInfo", searchedCity);
+			return "city_result";
+		}
 	}
-
 }
