@@ -1,6 +1,8 @@
 package cst438hw2.controller;
 
 import cst438hw2.service.WeatherService;
+import java.time.Instant;
+import java.time.ZoneOffset;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,12 +35,8 @@ public class CityRestController {
     }
     else {
       City currentCity = cities.get(0); //in case of multiple cities, take the first one
-      //CityInfo restCity = cityService.getCityInfo(currentCity.toString());
-      TempAndTime restWeather = weatherService.getTempAndTime(currentCity.toString());
-      System.out.println("Test");
-      //convert temp from Kelvin to degrees Fahrenheit
-      double tempF = Math.round((restWeather.getTemp() - 273.15) * 9.0/5.0 + 32.0);
-      restCity.setTemp(tempF);
+
+      CityInfo restCity = cityService.getCityInfo(currentCity.getName());
 
       return new ResponseEntity<CityInfo>(restCity, HttpStatus.OK);
     }
