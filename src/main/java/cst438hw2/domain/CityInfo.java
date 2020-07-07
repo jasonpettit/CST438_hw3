@@ -1,7 +1,6 @@
 package cst438hw2.domain;
 
 public class CityInfo {
-	
 	 long id;
 	 String name;
 	 String countryCode;
@@ -13,7 +12,7 @@ public class CityInfo {
 
 	 public CityInfo() {
 	 }
-	 
+
 	 public CityInfo(City city, String countryName, double temp, String time) {
 		 this.id = city.getId();
 		 this.name = city.getName();
@@ -37,7 +36,6 @@ public class CityInfo {
 		this.temp = temp;
 		this.time = time;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
