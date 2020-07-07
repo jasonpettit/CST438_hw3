@@ -149,6 +149,4 @@ public class CityInfo {
 		return "CityInfo [id=" + id + ", name=" + name + ", countryCode=" + countryCode + ", countryName=" + countryName
 				+ ", district=" + district + ", population=" + population + ", temp=" + temp + ", time=" + time + "]";
 	}
-	 
-	 
 }

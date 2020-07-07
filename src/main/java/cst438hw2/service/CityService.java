@@ -43,5 +43,4 @@ public class CityService {
 
 		return new CityInfo(tempCity, country.getName(), weather.getTemp(), time);
 	}
-	
 }
