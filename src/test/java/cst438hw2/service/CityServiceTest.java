@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-
 import cst438hw2.domain.*;
  
 @SpringBootTest
@@ -60,7 +59,7 @@ public class CityServiceTest {
 		// perform the tests
 		CityInfo cityResult = cityService.getCityInfo("TestCity");
 		CityInfo expectedResult = new CityInfo(1, "TestCity", "TST", "TestCountry", "DistrictTest",
-				100000, 76, "13:16");
+				100000, 76.0, "13:16");
 
 		// assertions
 		assertThat(cityResult).isEqualTo(expectedResult);
