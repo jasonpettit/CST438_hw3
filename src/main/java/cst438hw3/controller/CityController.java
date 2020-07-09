@@ -1,8 +1,8 @@
-package cst438hw2.controller;
+package cst438hw3.controller;
 
-import cst438hw2.domain.CityInfo;
-import cst438hw2.service.CityService;
-import cst438hw2.service.WeatherService;
+import cst438hw3.domain.CityInfo;
+import cst438hw3.service.CityService;
+import cst438hw3.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -44,5 +44,16 @@
     </tr>
   </tbody>
 </table>
+<p>For a fabulous weekend get away for 2 to <inline th:text="${cityInfo.name}"></inline> sign up here.</p>
+<form>
+  <label for="email">Email: </label><input type="text" id="email" name="email"><br>
+  <input type="radio" id="getAwayType" name="luxury">
+  <label for="getAwayType" name="luxury"> Luxury $1000</label><br>
+  <input type="radio" id="getAwayType" name="moderate">
+  <label for="getAwayType" name="moderate">Very Good $500</label><br>
+  <input type="radio" id="getAwayType" name="budget">
+  <label for="getAwayType" name="budget">Very Good $500</label><br>
+  <input type="submit" id="submit" name="submit">
+</form>
 </body>
 </html>
