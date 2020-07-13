@@ -28,7 +28,6 @@ public class CityController {
 			return "city_not_found";
 		}
 		else {
-
 			model.addAttribute("cityInfo", searchedCity);
 			return "city_show";
 		}
