@@ -9,8 +9,8 @@
     <version>2.3.1.RELEASE</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
-  <groupId>cst438hw2</groupId>
-  <artifactId>cst438hw2</artifactId>
+  <groupId>cst438hw3</groupId>
+  <artifactId>cst438hw3</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>cst438hw3</name>
   <description>cst438hw3</description>
